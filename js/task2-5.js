@@ -4,6 +4,7 @@
 Если нашли зарещенное слово то функция возвращает true, если запрещенных слов нет функция возвращает false. 
 Слова в строке могут быть в произвольном регистре.
 */
+
 const checkForSpam = function (message, wordToFind) {
   // твой код
   console.log(message);
@@ -15,13 +16,13 @@ const checkForSpam = function (message, wordToFind) {
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
-console.log(checkForSpam("Latest technology news", "spam")); // false
+console.log(checkForSpam("Latest technology news", "sale")); // false
 
-console.log(checkForSpam("JavaScript weekly newsletter", "spam")); // false
+console.log(checkForSpam("JavaScript weekly newsletter", "sale")); // false
 
-console.log(checkForSpam("Get best sale offers now!", "spam")); // true
+console.log(checkForSpam("Get best sale offers now!", "sale")); // true
 
-console.log(checkForSpam("[SPAM] How to earn fast money?", "spam")); // true
+console.log(checkForSpam("[SPAM] How to earn fast money?", "sale")); // true
 
 // function checkForSpam(str) {
 //   "use strict";
