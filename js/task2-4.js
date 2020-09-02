@@ -9,6 +9,10 @@ const formatString = function (string) {
   const maxLength = 40;
   const stringLength = string.split("");
   if (stringLength.length > maxLength) {
+    stringLength.length = maxLength;
+    return stringLength.join("") + "...";
+  } else if ((stringLength.length = maxLength || stringLength.length < maxLength)) {
+    return stringLength.join("");
   }
 };
 
